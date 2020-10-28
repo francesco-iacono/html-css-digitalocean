@@ -14,6 +14,9 @@ h3 {
 .text_blue_el {
   color: #006AFF;
 }
+.text_link {
+  text-decoration: underline;
+}
 ul {
   margin: 0;
 }
@@ -21,6 +24,8 @@ ul {
   display: inline-block;
   padding-right: 10px;
 }
+/* button */
+/* button-color */
 .btn_white {
   background-color: #ffffff;
   border: 1px solid #006AFF;
@@ -31,11 +36,27 @@ ul {
   background-color: #006AFF;
   color: #ffffff;
 }
+.btn_blue_el {
+  background-color: #006AFF;
+  border: 1px solid #006AFF;
+  color: #ffff;
+}
+.btn_blue_el:hover {
+  background-color: #1633FF;
+  border: 1px solid #1633FF;
+  color: #ffff;
+}
+.btn_shadow {
+  font-weight: bolder;
+}
+/* button-size */
 .btn_ex_lg {
   width: 100%;
   margin-top: 5px;
   margin-bottom: 5px;
 }
+/*/ button */
+
 /* header */
 /* header-top */
 #header_top {
@@ -60,20 +81,43 @@ ul {
 /* jumbotron */
 #jumbotron {
   width: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-image: url(https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg);
 }
 #jumbotron_title {
   color: #ffffff;
+  padding-right: 20px;
 }
 #jumbotron_title h1 {
-  font-size: 58px;
+  font-size: 68px;
 }
 #jumbotron_card {
   background-color: #ffffff;
   text-align: center;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
+#jumbotron_card h3 {
+  margin: 0;
+}
+#jumbotron_card input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#jumbotron_card button {
+  position: relative;
+}
+#jumbotron_card button i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY( -50%);
+  padding-left: 10px;
+}
+#jumbotron_card p {
+  font-size: 10px;
+}
 /*/ jumbotron */
 /*/ header */
