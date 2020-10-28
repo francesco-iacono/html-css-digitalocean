@@ -3,7 +3,8 @@ body {
   color: #806987;
 }
 h1 {
-  font-size: 700;
+  font-size: 900;
+  font-weight: bolder;
 }
 h2{
   color: #020d29;
@@ -73,7 +74,7 @@ ul {
   text-decoration: none;
 }
 #navbar_brand img {
-  width: 60%;
+  width: 160px;
   padding: 5px;
   vertical-align: middle;
 }
@@ -81,8 +82,8 @@ ul {
 /* jumbotron */
 #jumbotron {
   width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   background-image: url(https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg);
 }
 #jumbotron_title {
@@ -90,14 +91,13 @@ ul {
   padding-right: 20px;
 }
 #jumbotron_title h1 {
-  font-size: 68px;
+  font-size: 38px;
 }
 #jumbotron_card {
   background-color: #ffffff;
   text-align: center;
   border-radius: 5px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 10px;
 }
 #jumbotron_card h3 {
   margin: 0;
@@ -121,3 +121,11 @@ ul {
 }
 /*/ jumbotron */
 /*/ header */
+
+
+@media screen and (min-width: 992px) {
+
+    #jumbotron_title h1 {
+      font-size: 68px;
+      }
+}
