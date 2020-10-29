@@ -7,6 +7,8 @@ h1 {
   font-weight: bolder;
 }
 h2{
+  font-size: 700;
+  font-weight: bolder;
   color: #020d29;
 }
 h3 {
@@ -15,6 +17,10 @@ h3 {
 p {
   font-size: 400;
 }
+a {
+  color: #806987;
+}
+/* colori testo */
 .text_blue_el {
   color: #006AFF;
 }
@@ -24,6 +30,8 @@ p {
 .text_link {
   text-decoration: underline;
 }
+/* colori testo */
+/* liste */
 ul {
   padding: 0;
   margin: 0;
@@ -32,6 +40,21 @@ ul {
   display: inline-block;
   padding-right: 10px;
 }
+.list_vertical {
+  list-style-type: none;
+  border-left: 1px solid #806987;
+}
+.list_vertical li {
+  padding: 10px;
+}
+.list_vertical li:hover {
+  border-left: 1px solid  #006AFF;
+}
+.list_vertical li:hover a {
+  text-decoration: none;
+  color: #020d29;
+}
+/* /liste */
 /* button */
 /* button-color */
 .btn_white {
@@ -148,7 +171,7 @@ ul {
   width: calc(100% / 2 - 5px);
 }
 .cube img {
-  max-width: 158px;
+  max-width: 148px;
 }
 #logo_grid p  a{
   font-weight: bolder;
@@ -162,13 +185,16 @@ ul {
       font-size: 68px;
       }
 
-      #jumbotron {
-        padding-top: 70px;
-        padding-bottom: 60px;
-      }
-      .cube {
-        width: calc(100% / 3 - 5px);
-      }
+    #jumbotron {
+      padding-top: 70px;
+      padding-bottom: 60px;
+    }
+    .cube {
+      width: calc(100% / 3 - 5px);
+    }
+    .cube img {
+      max-width: 158px;
+    }
 }
 
 
