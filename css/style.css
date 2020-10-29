@@ -14,6 +14,10 @@ h2{
 h3 {
   color: #020d29;
 }
+h5 {
+  color: #020d29;
+  font-weight: bolder;
+}
 p {
   font-size: 400;
 }
@@ -55,6 +59,17 @@ ul {
   color: #020d29;
 }
 /* /liste */
+/* tabelle immagini e testo */
+.block_img {
+  height: 50px;
+}
+.block_img img {
+  height: 100%;
+}
+.block_text {
+  padding: 10px 10px 15px 0px;
+}
+/* tabelle immagini e testo */
 /* button */
 /* button-color */
 .btn_white {
@@ -156,61 +171,127 @@ ul {
 /*/ jumbotron */
 /*/ header */
 /* main */
+/* logo business area */
 #logo_grid {
   background-color: #F3F5F9;
   padding: 30px 0;
+  font-size: 0;
 }
 #logo_grid_img ul {
   padding: 20px 0;
 }
 #logo_grid_img ul li {
-  font-size: 0;
   padding: 5px;
 }
 .cube {
   width: calc(100% / 2 - 5px);
 }
 .cube img {
-  max-width: 148px;
+  max-width: 100%;
 }
 #logo_grid p  a{
   font-weight: bolder;
   text-decoration: none;
 }
+/* /logo business area */
+
+/* sezione uno- - Deploy and scale seamlessly */
+#deploy_scale {
+  padding: 40px 0;
+}
+/* per la classe block-img e block-texte vedi sopra */
+/* /sezione uno- - Deploy and scale seamlessly */
+/* Designed for developers */
+#designed_developers {
+  background-color: #F3F5F9;
+  padding: 30px 0;
+  text-align: center;
+}
+#designed_developers img {
+  width: 100%;
+}
+#designed_developers .scroll_item_container p {
+  font-weight: bolder;
+  color: #020d29;
+  padding: 15px;
+}
+.scroll_item_container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.scroll_item {
+  display: inline-block;
+}
+.scroll_item_center {
+  width: 45%;
+}
+.scroll_item_arrow {
+  font-size: 30px;
+  padding: 10px;
+}
+.scroll_item_arrow a:hover {
+  color: #020d29;
+}
+.btn_circle {
+  border: 2px solid #006AFF;
+  border-radius: 50%;
+  color: white;
+  padding: 4px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+/* /Designed for developers */
 
 /* dispositivi sm */
 @media screen and (min-width: 750px) {
 
+    /* header */
     #jumbotron_title h1 {
       font-size: 68px;
       }
-
     #jumbotron {
       padding-top: 70px;
       padding-bottom: 60px;
     }
+    /* /header */
+    /* main */
+    /* logo business area */
     .cube {
       width: calc(100% / 3 - 5px);
     }
-    .cube img {
-      max-width: 158px;
+    /* /logo business area */
+    /* Deploy and scale seamlessly */
+    .columns {
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
+    /*Deploy and scale seamlessly */
+    /* /main */
 }
 
 
 /* dispositivi md */
 @media screen and (min-width: 992px) {
 
+    /* header */
     #jumbotron_title h1 {
       font-size: 68px;
       }
-
       #jumbotron {
         padding-top: 90px;
         padding-bottom: 90px;
       }
+      /*/ header */
 
+      /* main */
+      /* logo business area */
       .cube {
         width: calc(100% / 6 - 5px);
       }
+      /* /logo business area */
+      /* /main */
+
 }
