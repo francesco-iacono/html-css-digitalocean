@@ -53,14 +53,6 @@ ul {
 }
 .list_vertical li {
   padding: 10px;
-  border-left: 1px solid #806987;
-}
-.list_vertical li:hover {
-  border-left: 1px solid  #006AFF;
-}
-.list_vertical li:hover a {
-  text-decoration: none;
-  color: #020d29;
 }
 /* /liste */
 /* tabelle immagini e testo */
@@ -83,15 +75,15 @@ ul {
   display: inline-block;
   vertical-align: middle;
 }
-.scroll_item_center {
-  width: 45%;
-}
 .scroll_item_arrow {
   font-size: 30px;
   padding: 10px;
 }
 .scroll_item_arrow a:hover {
   color: #020d29;
+}
+.scroll_item_center {
+  width: 45%;
 }
 /* scroll item */
 /* button scroll_item */
@@ -240,6 +232,19 @@ ul {
 #deploy_scale {
   padding: 40px 0;
 }
+#deploy_scale .list_vertical {
+  margin-bottom: 8px;
+}
+#deploy_scale .list_vertical li {
+  border-left: 1px solid #806987;
+}
+#deploy_scale .list_vertical li:hover {
+  border-left: 1px solid  #006AFF;
+}
+#deploy_scale .list_vertical li:hover a {
+  text-decoration: none;
+  color: #020d29;
+}
 /* per la classe block-img e block-texte vedi sopra */
 /* /sezione uno- - Deploy and scale seamlessly */
 /* Designed for developers */
@@ -275,16 +280,18 @@ ul {
 }
 #service_customers h2 {
   color: #ffffff;
+  margin-bottom: 30px;
 }
 #service_customers [class*='col-']  [class*='col-'] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.wrapper_border {
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-  padding: 10px;
 }
-/* #service_customers [class*='col-'] .row:last-child [class*='col-'] {
-  border-bottom: none; */
-}
-#service_customers .columns > [class*='col-'] {
-  margin-bottom: 15px;
+#service_customers [class*='col-'] .wrapper_border:last-child {
+  border-bottom: none;
+  margin-bottom: 20px;
 }
 #service_customers span {
   font-weight: bolder;
@@ -293,11 +300,13 @@ ul {
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 0;
 }
-/* IMPORTANTE cambia i margini della row di bootstrap */
-.wrapper_no_margin {
-  margin: 0;
+#service_customers a {
+  color: #01d7d3;
 }
-/* /IMPORTANTE cambia i margini della row di bootstrap */
+#service_customers a:hover {
+  text-decoration: none;
+  color: #006AFF;
+}
 /* /Service your customers  */
 /* Development teams love DigitalOcean */
 #development_teams {
@@ -305,17 +314,18 @@ ul {
 }
 #development_teams .scroll_item_center {
   background-color: #ffffff;
-  padding: 30px;
+  padding: 5px;
 }
 #development_teams img {
-  max-width: 90%;
+  width: 95%;
   padding: 10px;
 }
 /* Development teams love DigitalOcean */
 /* Get started now */
 #get_started {
   background-color: #006AFF;
-  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 #get_started h2 {
   color: #ffffff;
@@ -326,6 +336,33 @@ ul {
   color: #006AFF;
 }
 /* /Get started now */
+/* /main */
+/* footer */
+#footer_container {
+  background-color: #010E28;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#footer_container [class*='col-'] {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 10px;
+}
+#footer_container img {
+  margin-bottom: 10px;
+}
+#footer_container li a {
+  font-size: 20px;
+}
+#footer_container li a:hover {
+  color: #ffffff;
+}
+#footer_container h5 {
+  color: #ffffff;
+}
+/*/ footer */
+
+
+
 
 /* dispositivi sm */
 @media screen and (min-width: 750px) {
@@ -351,6 +388,12 @@ ul {
       padding-bottom: 40px;
     }
     /*Deploy and scale seamlessly */
+    /* Development teams love DigitalOcean */
+    #development_teams .scroll_item_center {
+      background-color: #ffffff;
+      padding: 30px;
+    }
+    /* Development teams love DigitalOcean */
     /* /main */
 }
 
