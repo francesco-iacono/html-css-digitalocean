@@ -81,7 +81,6 @@ ul {
 }
 .scroll_item {
   display: inline-block;
-  vertical-align: middle;
 }
 .scroll_item_center {
   width: 45%;
@@ -266,7 +265,7 @@ ul {
   margin-top: 30px;
 }
 /* /Built for business */
-/* Service your customers  */
+
 #service_customers {
   padding-top: 60px;
   padding-bottom: 80px;
@@ -276,104 +275,26 @@ ul {
 #service_customers h2 {
   color: #ffffff;
 }
-#service_customers [class*='col-']  [class*='col-'] {
+#service_customers ul {
+  width: 100%;
+  display: inline-block;
+  padding-top: 20px;
+}
+#service_customers .list_vertical li {
+  position: relative;
+  width: 100%;
+  border-left: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-  padding: 10px;
 }
-/* #service_customers [class*='col-'] .row:last-child [class*='col-'] {
-  border-bottom: none; */
-}
-#service_customers .columns > [class*='col-'] {
-  margin-bottom: 15px;
-}
-#service_customers span {
-  font-weight: bolder;
+#service_customers li:last-child {
+  border-bottom: none;
 }
 #service_customers p {
-  color: rgba(255, 255, 255, 0.7);
+  display: inline-block;
+  padding-left: 10px;
   margin-bottom: 0;
 }
-/* IMPORTANTE cambia i margini della row di bootstrap */
-.wrapper_no_margin {
-  margin: 0;
-}
-/* /IMPORTANTE cambia i margini della row di bootstrap */
-/* /Service your customers  */
-/* Development teams love DigitalOcean */
-#development_teams {
-  background-color: #F3F5F9;
-}
-#development_teams .scroll_item_center {
-  background-color: #ffffff;
-  padding: 30px;
-}
-#development_teams img {
-  max-width: 90%;
-  padding: 10px;
-}
-/* Development teams love DigitalOcean */
-/* Get started now */
-#get_started {
-  background-color: #006AFF;
-  padding: 40px;
-}
-#get_started h2 {
-  color: #ffffff;
-  padding-bottom: 10px;
-}
-#get_started button:hover {
-  background-color: #CBD4E4;
-  color: #006AFF;
-}
-/* /Get started now */
-
-/* dispositivi sm */
-@media screen and (min-width: 750px) {
-
-    /* header */
-    #jumbotron_title h1 {
-      font-size: 68px;
-      }
-    #jumbotron {
-      padding-top: 70px;
-      padding-bottom: 60px;
-    }
-    /* /header */
-    /* main */
-    /* logo business area */
-    .cube {
-      width: calc(100% / 3 - 5px);
-    }
-    /* /logo business area */
-    /* Deploy and scale seamlessly */
-    .columns {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-    /*Deploy and scale seamlessly */
-    /* /main */
-}
-
-
-/* dispositivi md */
-@media screen and (min-width: 992px) {
-
-    /* header */
-    #jumbotron_title h1 {
-      font-size: 68px;
-      }
-      #jumbotron {
-        padding-top: 90px;
-        padding-bottom: 90px;
-      }
-      /*/ header */
-
-      /* main */
-      /* logo business area */
-      .cube {
-        width: calc(100% / 6 - 5px);
-      }
-      /* /logo business area */
-      /* /main */
-
+#service_customers a {
+  position: absolute;
+  right: 0;
 }
