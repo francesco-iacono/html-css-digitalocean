@@ -51,6 +51,9 @@ ul {
 .list_vertical {
   list-style-type: none;
 }
+.list_vertical li:hover a {
+  text-decoration: none;
+}
 .list_vertical li {
   padding: 10px;
 }
@@ -83,7 +86,7 @@ ul {
   color: #020d29;
 }
 .scroll_item_center {
-  width: 45%;
+  width: 60%;
 }
 /* scroll item */
 /* button scroll_item */
@@ -242,7 +245,6 @@ ul {
   border-left: 1px solid  #006AFF;
 }
 #deploy_scale .list_vertical li:hover a {
-  text-decoration: none;
   color: #020d29;
 }
 /* per la classe block-img e block-texte vedi sopra */
@@ -340,33 +342,48 @@ ul {
 /* footer */
 #footer_container {
   background-color: #010E28;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #414a60;
+  font-weight: 500;
 }
 #footer_container [class*='col-'] {
-  border: 1px solid rgba(255, 255, 255, 0.7);
   padding: 10px;
 }
 #footer_container img {
   margin-bottom: 10px;
 }
+#footer_container .list_vertical li {
+  padding: 5px 0;
+}
 #footer_container li a {
+  color: #414a60;
+  font-size: 400;
+}
+#footer_container li a i {
   font-size: 20px;
 }
 #footer_container li a:hover {
   color: #ffffff;
 }
-#footer_container h5 {
+#footer_container h6 {
   color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
 }
+
+
 /*/ footer */
-
-
 
 
 /* dispositivi sm */
 @media screen and (min-width: 750px) {
 
+  /* utilitis */
+  .scroll_item_center {
+    width: 45%;
+  }
+  /* utilitis */
     /* header */
     #jumbotron_title h1 {
       font-size: 68px;
