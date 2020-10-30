@@ -3,12 +3,10 @@ body {
   color: #806987;
 }
 h1 {
-  font-size: 900;
-  font-weight: bolder;
+  font-weight: 900;
 }
 h2{
-  font-size: 700;
-  font-weight: bolder;
+  font-weight: 700;
   color: #020d29;
 }
 h3 {
@@ -19,11 +17,17 @@ h5 {
   font-weight: bolder;
 }
 p {
-  font-size: 400;
+  font-weight: 400;
 }
 a {
   color: #806987;
 }
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* utilitis */
 /* colori testo */
 .text_blue_el {
   color: #006AFF;
@@ -40,10 +44,6 @@ a {
 }
 /* colori testo */
 /* liste */
-ul {
-  padding: 0;
-  margin: 0;
-}
 .list_inline li {
   display: inline-block;
   padding-right: 10px;
@@ -135,6 +135,7 @@ ul {
   margin-bottom: 5px;
 }
 /*/ button */
+/* /utilitis */
 
 /* header */
 /* header-top */
@@ -164,7 +165,41 @@ ul {
   font-size: 20px;
 }
 /*/ header-top */
-/* jumbotron */
+/* body messages presente all'interno del jumbotron*/
+#body_messages {
+  position: fixed;
+  bottom: 5%;
+  z-index: 4;
+}
+#text_messages {
+  background: #ffffff;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 15px;
+}
+#text_messages p {
+  margin: 0;
+}
+#img_messages {
+  height: 100%;
+  line-height: 20px;
+  padding: 15px;
+}
+#img_messages button {
+  padding: 6px 12px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+}
+#img_messages img {
+  max-width: 70px;
+  width: 60%;
+  cursor: pointer;
+}
+/*/ body messages */
+/* jumbotron*/
 #jumbotron {
   width: 100%;
   padding-top: 60px;
@@ -358,7 +393,7 @@ ul {
 }
 #footer_container li a {
   color: #414a60;
-  font-size: 400;
+  font-weight: 400;
 }
 #footer_container li a i {
   font-size: 20px;
@@ -423,8 +458,8 @@ ul {
       font-size: 68px;
       }
       #jumbotron {
-        padding-top: 90px;
-        padding-bottom: 90px;
+        padding-top: 120px;
+        padding-bottom: 120px;
       }
       /*/ header */
 

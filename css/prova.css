@@ -1,300 +1,39 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #806987;
-}
-h1 {
-  font-size: 900;
-  font-weight: bolder;
-}
-h2{
-  font-size: 700;
-  font-weight: bolder;
-  color: #020d29;
-}
-h3 {
-  color: #020d29;
-}
-h5 {
-  color: #020d29;
-  font-weight: bolder;
-}
-p {
-  font-size: 400;
-}
-a {
-  color: #806987;
-}
-/* colori testo */
-.text_blue_el {
-  color: #006AFF;
-}
-.text_blue_el:hover {
-  color: #1633FF;
-}
-.link_blue {
-  font-weight: bolder;
-  text-decoration: none;
-}
-.link_blue a {
-  text-decoration: none;
-}
-/* colori testo */
-/* liste */
-ul {
-  padding: 0;
-  margin: 0;
-}
-.list_inline li {
-  display: inline-block;
-  padding-right: 10px;
-}
-.list_vertical {
-  list-style-type: none;
-}
-.list_vertical li {
-  padding: 10px;
-  border-left: 1px solid #806987;
-}
-.list_vertical li:hover {
-  border-left: 1px solid  #006AFF;
-}
-.list_vertical li:hover a {
-  text-decoration: none;
-  color: #020d29;
-}
-/* /liste */
-/* tabelle immagini e testo */
-.block_img {
-  height: 50px;
-}
-.block_img img {
-  height: 100%;
-}
-.block_text {
-  padding: 10px 10px 15px 0px;
-}
-/* tabelle immagini e testo */
-/* scroll item */
-.scroll_item_container {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.scroll_item {
-  display: inline-block;
-}
-.scroll_item_center {
-  width: 45%;
-}
-.scroll_item_arrow {
-  font-size: 30px;
-  padding: 10px;
-}
-.scroll_item_arrow a:hover {
-  color: #020d29;
-}
-/* scroll item */
-/* button scroll_item */
-.btn_circle {
-  border: 2px solid #006AFF;
-  border-radius: 50%;
-  padding: 3px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px;
-}
-.btn_circle:hover {
-  background-color: #006AFF;
-}
-/* button scroll_item */
-/* button */
-/* button-color */
-.btn_white {
-  background-color: #ffffff;
-  border: 1px solid #006AFF;
-  color: #006AFF;
-  font-weight: bolder;
-}
-.btn_white:hover {
-  background-color: #006AFF;
-  color: #ffffff;
-}
-.btn_blue_el {
-  background-color: #006AFF;
-  border: 1px solid #006AFF;
-  color: #ffff;
-}
-.btn_blue_el:hover {
-  background-color: #1633FF;
-  border: 1px solid #1633FF;
-  color: #ffff;
-}
-.btn_shadow {
-  font-weight: bolder;
-}
-/* button-size */
-.btn_ex_lg {
-  width: 100%;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-/*/ button */
-
-/* header */
-/* header-top */
-#header_top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-  background-color: #ffffff;
-  z-index: 3;
-}
-#header_top a {
-  color: #031B4E;
-}
-#header_top a:hover {
-  color: #006AFF;
-  text-decoration: none;
-}
-#navbar_brand img {
-  width: 160px;
-  padding: 5px;
-  vertical-align: middle;
-}
-#humburger_icon {
-  font-size: 20px;
-}
-/*/ header-top */
-/* jumbotron */
-#jumbotron {
-  width: 100%;
-  padding-top: 60px;
-  padding-bottom: 40px;
-  background-image: url(https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg);
-}
-#jumbotron_title {
-  color: rgba(255, 255, 255, 0.7);
-  padding-right: 20px;
-}
-#jumbotron_title h1 {
-  font-size: 38px;
-  color: #ffffff;
-}
-#jumbotron_card {
-  background-color: #ffffff;
-  text-align: center;
-  border-radius: 5px;
-  padding: 20px 10px;
-}
-#jumbotron_card h3 {
-  margin: 0;
-}
-#jumbotron_card input {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-#jumbotron_card button {
+.container {
+  height: 800px;
+  background-color: lightblue;
   position: relative;
 }
-#jumbotron_card button i {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY( -50%);
-  padding-left: 10px;
+/* jumbotron */
+#body_messages {
+  position: fixed;
+  width: 100%;
+  bottom: 5%;
+  z-index: 4;
 }
-#jumbotron_card p {
+#text_messages {
+  background: #ffffff;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 15px;
+}
+#text_messages p {
+  margin: 0;
+}
+#img_messages {
+  height: 100%;
+  line-height: 20px;
+  padding: 15px;
+}
+#img_messages button {
+  padding: 6px 12px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
   font-size: 10px;
 }
-.text_link {
-  text-decoration: underline;
-}
-/*/ jumbotron */
-/*/ header */
-/* main */
-/* logo business area */
-#logo_grid {
-  background-color: #F3F5F9;
-  padding: 30px 0;
-}
-#logo_grid_img ul {
-  padding: 20px 0;
-  font-size: 0;
-}
-#logo_grid_img ul li {
-  padding: 5px;
-}
-.cube {
-  width: calc(100% / 2 - 5px);
-}
-.cube img {
-  max-width: 100%;
-}
-/* /logo business area */
-
-/* sezione uno- - Deploy and scale seamlessly */
-#deploy_scale {
-  padding: 40px 0;
-}
-/* per la classe block-img e block-texte vedi sopra */
-/* /sezione uno- - Deploy and scale seamlessly */
-/* Designed for developers */
-#designed_developers {
-  background-color: #F3F5F9;
-  padding: 30px 0;
-  text-align: center;
-}
-#designed_developers img {
-  width: 100%;
-}
-#designed_developers .scroll_item_container p {
-  font-weight: bolder;
-  color: #020d29;
-  padding-top: 15px;
-}
-/* /Designed for developers */
-/* Built for business */
-#built_business {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-#built_business .block_img {
-  margin-top: 30px;
-}
-/* /Built for business */
-
-#service_customers {
-  padding-top: 60px;
-  padding-bottom: 80px;
-  background: url(https://prismic-io.s3.amazonaws.com/www-static/a2e2e54b-93f5-4579-9fa2-bd957fea611a_bg-map.svg) 50% 50% / cover no-repeat rgb(3, 27, 78);
-  color: #ffffff;
-}
-#service_customers h2 {
-  color: #ffffff;
-}
-#service_customers ul {
-  width: 100%;
-  display: inline-block;
-  padding-top: 20px;
-}
-#service_customers .list_vertical li {
-  position: relative;
-  width: 100%;
-  border-left: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-}
-#service_customers li:last-child {
-  border-bottom: none;
-}
-#service_customers p {
-  display: inline-block;
-  padding-left: 10px;
-  margin-bottom: 0;
-}
-#service_customers a {
-  position: absolute;
-  right: 0;
+#img_messages img {
+  max-width: 70px;
+  width: 60%;
+  cursor: pointer;
 }
